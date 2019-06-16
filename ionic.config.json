@@ -1,5 +1,7 @@
 {
   "name": "SRBApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
