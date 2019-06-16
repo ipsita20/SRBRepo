@@ -1,0 +1,25 @@
+<ion-content padding>
+  <div class="logoDiv">
+    <ion-img src="../assets/images/shoeRepairLogo.png" style="height:145px"></ion-img>
+  </div>
+  <ion-item>
+    <ion-label position="floating" class="loginLabel">User Id</ion-label>
+    <ion-input type="text" class="eachInputBox" #userId required autofocus></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" class="loginLabel">Password</ion-label>
+    <ion-input type="password" class="eachInputBox" #userPassword required></ion-input>
+  </ion-item>
+  <div class="loginBtnDiv">
+    <ion-button expand="block" class="loginBtn" (click)="login(userId.value, userPassword.value)">LOG IN
+    </ion-button>
+  </div>
+  <div class="loginAnchorLabel">
+    <ion-label position="floating" class="forgotPswrd">Forgot Password?
+      <a href="#" class="loginAnchor"> Click here</a>
+    </ion-label>
+  </div>
+  <div class="loginAnchorLabel">
+    <a href="#" class="loginAnchor">Create Account</a>
+  </div>
+</ion-content>

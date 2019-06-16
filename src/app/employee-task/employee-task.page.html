@@ -1,0 +1,37 @@
+<ion-content padding>
+  <ion-img src="../assets/images/shoeRepairLogo.png" style="height:145px"></ion-img>
+  <div class="eachRow">
+    <ion-label style="font-size:13px; text-transform:uppercase;">Welcome</ion-label>
+  </div>
+  <div class="eachRow">
+    <ion-label style="font-size:22px; text-transform:uppercase; font-weight:600;">{{employeeDetails.name}}</ion-label>
+  </div>
+  <div class="eachRow">
+    <ion-label style="font-size:11px;margin-top:10px; font-weight:100;">You are logged in to the :</ion-label>
+  </div>
+  <div class="eachRow">
+    <ion-label style="font-size:22px; text-transform:uppercase; font-weight:600;">{{employeeDetails.department}}
+    </ion-label>
+  </div>
+  <div style="color:#fff; margin-top:20px; margin-bottom:8px;padding-left:20px; padding-right:20px;">
+    <ion-label style="font-size:12px; text-align:left; font-weight:100;">Please Select your Location :</ion-label>
+  </div>
+  <div style="padding-left:30px; padding-right:30px;">
+    <div *ngFor="let storeLoc of employeeDetails.storeLocs" class="eachSelectLocDiv">
+      <div style="width:12%; display:inline-block;">
+        <ion-checkbox slot="end" class="selectStore"></ion-checkbox>
+      </div>
+      <div style="width:86%; display:inline-block;">
+        <ion-button class="storeLocBtn" expand="block" (click)="goToStartTask();">{{storeLoc}}</ion-button>
+      </div>
+    </div>
+    <div>
+      <div style="width:12%; display:inline-block;">
+        <ion-checkbox slot="end" class="selectStore"></ion-checkbox>
+      </div>
+      <div style="width:86%; display:inline-block;">
+        <ion-button class="storeLocBtn" expand="block">Other</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -4,3 +4,13 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+:root {
+    --ion-background-color: rgb(88, 88, 88);
+    --ion-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif;
+  }
+ion-button {
+    --color: #fafdfa;
+    --background: #67bf70;
+    --background-activated: #34833c;
+    --background-focused: #34833c;
+  }

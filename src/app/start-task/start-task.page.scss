@@ -1,0 +1,32 @@
+.taskBtn {
+    display: inline-block;
+    width:31%;
+    height: 3em;
+    font-size: 12px;
+    font-weight: 600;
+    border: 3px solid #000;
+    border-radius: 12px;
+}
+.eachRow {
+    text-align:center;
+    color:#fff;
+}
+.strtBtn {
+    --background: #34833c;
+    --background-activated: #34833c;
+    --background-focused: #34833c;
+}
+.viewBtn {
+    --background:#e8d812;
+    --color:#000;
+    --background-activated:#e8d812;
+    --background-focused: #e8d812;
+    letter-spacing: 0.15em;
+    font-weight:800;
+}
+.finishBtn {
+    --background: #bb3131;
+    --color: #e8d812;
+    --background-activated: #bb3131;
+    --background-focused: #bb3131;
+}
