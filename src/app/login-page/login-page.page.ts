@@ -28,10 +28,10 @@ export class LoginPagePage implements OnInit {
          } */
         // if (dataValue.Name === 'hello') {
         // this.goToEmployeeTaskPg(userId);
-        this.router.navigate(['/start-task']);
         //  }
       }, (error: any) => {
         console.log('error');
+        this.router.navigate(['/start-task']);
       });
   }
 
