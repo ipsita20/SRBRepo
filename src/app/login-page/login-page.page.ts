@@ -18,12 +18,13 @@ export class LoginPagePage implements OnInit {
   login(userId: string, userPswrd: string): void {
     this.querySubscription = this.loginService.login().subscribe(
       (dataValue: any) => {
-        for (const prop in dataValue) {
-          if (dataValue[prop].userId === userId && dataValue[prop].userPassword === userPswrd) {
-            this.goToEmployeeTaskPg(userId);
-            return 0;
-          }
-        }
+        console.log(dataValue);
+        /* for (const prop in dataValue) {
+           if (dataValue[prop].userId === userId && dataValue[prop].userPassword === userPswrd) {
+             this.goToEmployeeTaskPg(userId);
+             return 0;
+           }
+         } */
       }, (error: any) => {
         console.log('error');
       });

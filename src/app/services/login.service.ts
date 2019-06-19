@@ -15,7 +15,8 @@ export class LoginService {
   };
   constructor(private httpClient: HttpClient, private router: Router) { }
   login(): Observable<any> {
-    const res = this.httpClient.get<any>(appGlobals.loginUrl, this.httpOptions);
+    // const res = this.httpClient.get<any>(appGlobals.loginUrl, this.httpOptions);
+    const res = this.httpClient.get<any>(appGlobals.test, this.httpOptions);
     return res;
   }
 }

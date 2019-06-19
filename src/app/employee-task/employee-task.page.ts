@@ -15,6 +15,17 @@ export class EmployeeTaskPage implements OnInit {
   subscription: Subscription;
   userId: string;
   employeeDetails: { name: string, department: string, storeLocs: [] };
+  employee = {
+    "id": "9",
+    "userId": "user9",
+    "employeeName": "Harsh",
+    "department": "Department 5",
+    "storeLocs": [
+      "Dumdum",
+      "Saltlake",
+      "Warehouse"
+    ]
+  }
   constructor(private employeeTaskService: EmployeeTaskService, private apiCallingService: ApiCallingService, private router: Router) { }
 
   ngOnInit() {
