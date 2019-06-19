@@ -10,7 +10,7 @@ import * as appGlobals from '../appGlobals/globalVariables';
 export class LoginService {
   httpOptions = {
     headers: new HttpHeaders({
-      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/json'
     })
   };
   constructor(private httpClient: HttpClient, private router: Router) { }
